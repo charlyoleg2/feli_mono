@@ -1,7 +1,7 @@
 {
 	"name": "check-feli",
 	"description": "library for making quickly your mini-server for your front-end only web-app",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"private": true,
 	"repository": {
 		"type": "git",
