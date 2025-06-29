@@ -1,0 +1,89 @@
+{
+	"name": "feli",
+	"description": "library for making quickly your mini-server for your front-end only web-app",
+	"version": "0.5.0",
+	"private": false,
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/charlyoleg2/feli_mono.git"
+	},
+	"homepage": "https://charlyoleg2.github.io/feli_mono/",
+	"author": "charlyoleg",
+	"license": "ISC",
+	"keywords": [
+		"web-app",
+		"web-ui",
+		"front-end",
+		"local installation"
+	],
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./dist/feli.d.ts",
+			"default": "./dist/feli.js"
+		}
+	},
+	"files": [
+		"dist/",
+		"!dist/**/*.d.ts",
+		"!dist/**/*.map",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"tsup": {
+		"entry": [
+			"src/index.ts"
+		],
+		"format": "esm",
+		"splitting": false,
+		"dts": true,
+		"sourcemap": true,
+		"clean": true
+	},
+	"prettier": {
+		"useTabs": true,
+		"singleQuote": true,
+		"trailingComma": "none",
+		"printWidth": 100,
+		"plugins": [],
+		"overrides": []
+	},
+	"scripts": {
+		"dev": "tsup --watch",
+		"build": "tsup",
+		"check": "tsc --noEmit",
+		"pretty": "prettier --check .",
+		"format": "prettier --write .",
+		"lint": "eslint .",
+		"test:unit": "vitest",
+		"test:unit:once": "vitest --run",
+		"ci": "run-s check build pretty lint test:unit:once",
+		"clean": "rimraf node_modules build dist tmp"
+	},
+	"dependencies": {
+		"express": "^5.1.0",
+		"fs-extra": "^11.3.0",
+		"get-port": "^7.1.0",
+		"open": "^10.1.2",
+		"yargs": "^18.0.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.10.0",
+		"@types/eslint__js": "^8.42.3",
+		"@types/express": "^5.0.3",
+		"@types/fs-extra": "^11.0.4",
+		"@types/yargs": "^17.0.33",
+		"eslint": "^9.29.0",
+		"eslint-config-prettier": "^10.1.5",
+		"npm-run-all2": "^8.0.4",
+		"prettier": "^3.6.0",
+		"rimraf": "^6.0.1",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.35.0",
+		"vitest": "^3.2.4"
+	}
+}
