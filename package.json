@@ -33,7 +33,7 @@
 		"create-feli:clean": "npm -w create-feli run clean",
 		"create-feli:version": "npm -w create-feli version patch",
 		"create-feli:publish": "npm -w create-feli publish --provenance",
-		"ci": "run-s feli:ci",
+		"ci": "run-s feli:ci create-feli:ci",
 		"ci2": "run-s feli:ci apidoc",
 		"clean-root": "rimraf tmp output output2 build",
 		"clean": "run-s clean-root feli:clean check-feli:clean create-feli:clean",
