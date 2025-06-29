@@ -1,11 +1,11 @@
 {
-	"entryPoints": ["pkg/nA", "pkg/nZ", "pkg/back-config"],
-	"name": "Dedale ecosystem",
+	"entryPoints": ["pkg/feli"],
+	"name": "libray-package feli",
 	"entryPointStrategy": "packages",
 	"out": "build/apidoc",
 	"navigationLinks": {
-		"Dadale sources": "https://github.com/charlyoleg2/dedale_mono",
-		"Dedalep static pages": "https://charlyoleg2.github.io/dedale_mono/"
+		"Dadale sources": "https://github.com/charlyoleg2/feli_mono",
+		"Dedalep static pages": "https://charlyoleg2.github.io/feli_mono/"
 	},
 	"includeVersion": false
 }
