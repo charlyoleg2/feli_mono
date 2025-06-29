@@ -35,7 +35,7 @@
 	},
 	"tsup": {
 		"entry": [
-			"src/index.ts"
+			"src/check-feli.ts"
 		],
 		"format": "esm",
 		"splitting": false,

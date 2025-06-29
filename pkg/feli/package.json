@@ -19,8 +19,8 @@
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./dist/feli.d.ts",
-			"default": "./dist/feli.js"
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [
