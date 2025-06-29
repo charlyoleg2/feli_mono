@@ -3,8 +3,8 @@
 	"type": "module",
 	"version": "0.5.0",
 	"scripts": {
-		"build": "fse copy src dist/public",
-		"preview": "serve dist/public",
+		"build": "fse copy src build",
+		"preview": "serve build",
 		"ci": "run-s build",
 		"clean": "rimraf dist node_modules"
 	},
