@@ -1,18 +1,18 @@
 #!/usr/bin/env node
-// create-vag-cli.ts
+// create-feli-cli.ts
 
 import * as prom from '@clack/prompts';
 import chalk from 'chalk';
 import packag from '../package.json';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { generate_boirlerplate } from './create-vag-api';
-//import type { tCfg1, tResp } from './create-vag-common';
-import type { tCfg1 } from './create-vag-common';
-import { prefixOutputPath } from './create-vag-common';
+import { generate_boirlerplate } from './create-feli-api';
+//import type { tCfg1, tResp } from './create-feli-common';
+import type { tCfg1 } from './create-feli-common';
+import { prefixOutputPath } from './create-feli-common';
 
 // first message
 const firstMsg =
-	`Create a new ${chalk.italic('vag-top-repo')}` +
+	`Create a new ${chalk.italic('feli-top-repo')}` +
 	` with ${chalk.italic(packag.name)} version ${chalk.italic(packag.version)}`;
 
 console.log(firstMsg);
@@ -27,7 +27,7 @@ if (argN > 1) {
 }
 
 // questions
-prom.intro(chalk.inverse(' Your new vag-top-repo '));
+prom.intro(chalk.inverse(' Your new feli-top-repo '));
 const pCfg = await prom.group(
 	{
 		projName: () =>
@@ -39,8 +39,8 @@ const pCfg = await prom.group(
 		repoName: () =>
 			prom.text({
 				message: 'Name of the top-repository?',
-				initialValue: `${projName}_vag`
-				//placeholder: `${projName}_vag`
+				initialValue: `${projName}_uis`
+				//placeholder: `${projName}_uis`
 			})
 	},
 	{
@@ -50,7 +50,7 @@ const pCfg = await prom.group(
 		}
 	}
 );
-prom.outro('Your new vag-top-repository will be boilerplated!');
+prom.outro('Your new feli-top-repository will be boilerplated!');
 
 const cfg1: tCfg1 = {
 	projName: pCfg.projName,

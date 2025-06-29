@@ -1,4 +1,4 @@
-// create-vag-common.ts
+// create-feli-common.ts
 
 interface tCfg1 {
 	projName: string;

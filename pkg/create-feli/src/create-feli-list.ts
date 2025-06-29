@@ -1,4 +1,4 @@
-// create-vag-list.ts
+// create-feli-list.ts
 
 const template_file_list = [
 	'.editorconfig',

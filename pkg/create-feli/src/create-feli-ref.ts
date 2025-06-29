@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-// create-vag-ref.ts
+// create-feli-ref.ts
 
 import { setTimeout as sleep } from 'node:timers/promises';
-import { generate_boirlerplate } from './create-vag-api';
-//import type { tCfg1, tResp } from './create-vag-common';
-import type { tCfg1 } from './create-vag-common';
-//import { firstLetterCapital, prefixOutputPath } from './create-vag-common';
+import { generate_boirlerplate } from './create-feli-api';
+//import type { tCfg1, tResp } from './create-feli-common';
+import type { tCfg1 } from './create-feli-common';
+//import { firstLetterCapital, prefixOutputPath } from './create-feli-common';
 
 // get optional preDir from command-line
 const preDir = process.argv[2] || 'tmp2';
@@ -19,7 +19,7 @@ if (argN > 1) {
 const projName = 'blabla';
 const cfg1: tCfg1 = {
 	projName: `${projName}`,
-	repoName: `${projName}_vag`
+	repoName: `${projName}_uis`
 };
 await generate_boirlerplate(cfg1, preDir);
 await sleep(100); // for fun

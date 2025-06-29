@@ -1,13 +1,13 @@
-// create-vag-api.ts
+// create-feli-api.ts
 
 import { setTimeout as sleep } from 'node:timers/promises';
 import { readFile, writeFile, access, mkdir } from 'node:fs/promises';
 //import { Buffer } from 'node:buffer';
 import { dirname, extname } from 'path';
 import Handlebars from 'handlebars';
-import type { tCfg1, tCfg2, tResp } from './create-vag-common';
-import { firstLetterCapital, underline } from './create-vag-common';
-import { template_file_list } from './create-vag-list';
+import type { tCfg1, tCfg2, tResp } from './create-feli-common';
+import { firstLetterCapital, underline } from './create-feli-common';
+import { template_file_list } from './create-feli-list';
 
 async function createMissingDir(outPath: string): Promise<void> {
 	// create missing output directory
@@ -38,7 +38,7 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 		// compute read and write path
 		const onePathIn = Handlebars.compile(onePath)({
 			projName: 'projAbc',
-			repoName: 'projAbc_vag'
+			repoName: 'projAbc-uis'
 		});
 		const onePathOut = Handlebars.compile(onePath)(cfg2);
 		// try to read the file.handlebars. If it doesn"t exist, just copy the file
