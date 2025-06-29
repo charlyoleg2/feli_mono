@@ -1,8 +1,9 @@
-import { describe, it, expect } from 'vitest';
-import { feli_cli } from './feli';
+//import { describe, it, expect } from 'vitest';
+import { describe, it } from 'vitest';
+import { feli_cli } from './index';
 
 describe('feli suit', () => {
-	it('feli execution', () => {
-		expect(await feli_cli('pubDir', ['--help'])).toBeUndefined();
+	it('feli execution', async ({ expect }) => {
+		await expect(feli_cli('pubDir', ['--help'])).rejects.toThrowError();
 	});
 });

@@ -4,7 +4,7 @@
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fs from 'node:fs';
-import process from 'node:process';
+//import process from 'node:process';
 import express from 'express';
 import open from 'open';
 import getport from 'get-port';
@@ -24,8 +24,10 @@ async function mini_server(aDirectory: string, aBrowser: boolean, aPort: number)
 	// sanity checks for aDirectory
 	if (aDirectory !== '') {
 		if (!fs.existsSync(aDirectory)) {
-			console.error(`ERR339: Error, the path ${aDirectory} doesn't exist!`);
-			process.exit(-1);
+			const eMsg = `ERR339: Error, the path ${aDirectory} doesn't exist!`;
+			//console.error(eMsg);
+			//process.exit(-1);
+			throw eMsg;
 		}
 	}
 
