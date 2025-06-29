@@ -1,43 +1,42 @@
 {
 	"name": "create-feli",
 	"version": "0.1.10",
-	"description": "The npm-initializer for creating a new vag repo",
+	"description": "The npm-initializer for creating a new feli package",
 	"private": false,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/charlyoleg2/vag.git"
+		"url": "git+https://github.com/charlyoleg2/feli_mono.git"
 	},
-	"homepage": "https://www.npmjs.com/package/create-vag",
+	"homepage": "https://www.npmjs.com/package/create-feli",
 	"author": "charlyoleg",
 	"license": "ISC",
 	"keywords": [
-		"git",
-		"sub-repo",
-		"vcstool",
-		"subg",
-		"vag"
+		"front-end only",
+		"locally installed",
+		"web-UI deployment",
+		"feli"
 	],
 	"type": "module",
 	"exports": {
 		".": {
-			"types": "./dist/create-vag-api.d.ts",
-			"default": "./dist/create-vag-api.js"
+			"types": "./dist/create-feli-api.d.ts",
+			"default": "./dist/create-feli-api.js"
 		}
 	},
 	"bin": {
-		"create-vag": "dist/create-vag-cli.js"
+		"create-feli": "dist/create-feli-cli.js"
 	},
 	"files": [
-		"dist/create-vag-cli.js",
+		"dist/create-feli-cli.js",
 		"dist/template/",
 		"!dist/**/*.map",
 		"!dist/**/*.spec.*"
 	],
 	"tsup": {
 		"entry": [
-			"src/create-vag-api.ts",
-			"src/create-vag-ref.ts",
-			"src/create-vag-cli.ts"
+			"src/create-feli-api.ts",
+			"src/create-feli-ref.ts",
+			"src/create-feli-cli.ts"
 		],
 		"format": "esm",
 		"splitting": false,
@@ -65,8 +64,8 @@
 		"copy_template": "shx cp -r template dist/",
 		"cleanCopy_template": "run-s clean:template copy_template",
 		"ci": "run-s check build pretty lint test:unit:once cleanCopy_template",
-		"run": "dist/create-vag-cli.js",
-		"run:ref": "dist/create-vag-ref.js tmp2",
+		"run": "dist/create-feli-cli.js",
+		"run:ref": "dist/create-feli-ref.js tmp2",
 		"run:diff": "diff -rq tmp tmp2",
 		"run:check": "run-s run:ref run:diff",
 		"cycle": "run-s clean ci run",
