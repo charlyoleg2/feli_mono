@@ -9,7 +9,7 @@
 		"astro": "astro",
 		"format": "prettier --write .",
 		"lint": "prettier --check .",
-		"ci": "echo lala",
+		"ci": "cp -a src dist",
 		"ci2": "run-s build lint",
 		"github-pages-fix": "touch dist/.nojekyll",
 		"clean": "rimraf .astro dist node_modules"
