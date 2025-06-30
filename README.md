@@ -20,7 +20,8 @@ git clone https://github.com/charlyoleg2/feli_mono.git
 cd feli_mono
 npm install
 npm run ci
-node check-feli/dist/check-feli.js
+node pkg/check-feli/dist/check-feli.js
+npm run check-feli:run
 ```
 
 
