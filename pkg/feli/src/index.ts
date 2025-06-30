@@ -83,7 +83,7 @@ async function feli_cli(defaultPublicDir: string, argv: string[]) {
 			type: 'string',
 			description: 'path to the directory to be served.',
 			//default: `${__dirname}/webui`,
-			//default: `${scrDir}/public`
+			//default: path.join(scrDir, 'public')
 			default: defaultPublicDir
 		})
 		.option('browser', {
@@ -106,7 +106,7 @@ async function feli_cli(defaultPublicDir: string, argv: string[]) {
 }
 
 //console.log('test-feli says Hello!');
-//await feli_cli(`${scrDir}/public`, process.argv);
+//await feli_cli(path.join(scrDir, 'public'), process.argv);
 //console.log('test-feli says Bye!');
 
 export { feli_cli };

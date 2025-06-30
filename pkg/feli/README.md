@@ -33,7 +33,7 @@ import { feli_cli } from '../dist/index.js';
 import process from 'node:process';
 
 const scrDir = import.meta.dirname;
-const defaultPublicDir = `${scrDir}/public`;
+const defaultPublicDir = path.join(scrDir, 'public');
 
 try {
 	await feli_cli(defaultPublicDir, process.argv);

@@ -6,8 +6,43 @@ Presentation
 ------------
 
 The purpose of the project *Feli* is to *install locally* a pure front-end web-app.
-
 *Feli* means **F**rnt **E**nd **L**ocally **I**nstalled.
+*feli* is a javascript library for building a static web-server for installing and running locally your front-end web-app.
+
+
+Requirements
+------------
+
+- [node](https://nodejs.org) > 22.0.0
+- [npm](https://docs.npmjs.com/cli) > 11.0.0
+
+
+Installation
+------------
+
+```bash
+npm i -D feli
+```
+
+
+Usage
+-----
+
+Here the typical code for creating a mini-server:
+
+```javascript
+import { feli_cli } from '../dist/index.js';
+import process from 'node:process';
+
+const scrDir = import.meta.dirname;
+const defaultPublicDir = path.join(scrDir, 'public');
+
+try {
+	await feli_cli(defaultPublicDir, process.argv);
+} catch (err) {
+	console.error(`CATCH ERROR: ${err}`);
+}
+```
 
 
 Dev
@@ -52,5 +87,4 @@ npm version patch
 git push
 git push origin v0.5.3
 ```
-
 

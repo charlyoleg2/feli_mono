@@ -5,7 +5,7 @@ import { feli_cli } from 'feli';
 import process from 'node:process';
 
 const scrDir = import.meta.dirname;
-const defaultPublicDir = `${scrDir}/public`;
+const defaultPublicDir = path.join(scrDir, 'public');
 
 //console.log('check-feli.ts says Hello!');
 try {
