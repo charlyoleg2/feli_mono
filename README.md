@@ -7,7 +7,16 @@ Presentation
 
 The purpose of the project *Feli* is to *install locally* a pure front-end web-app.
 *Feli* means **F**rnt **E**nd **L**ocally **I**nstalled.
-*feli* is a javascript library for building a static web-server for installing and running locally your front-end web-app.
+
+
+Links
+-----
+
+The mono-repo [feli\_mono](https://github.com/charlyoleg2/feli_mono) publishes two packages:
+- [feli](https://www.npmjs.com/package/feli)
+- [create-feli](https://www.npmjs.com/package/create-feli)
+
+And it generates those [html-pages](https://charlyoleg2.github.io/feli_mono/)
 
 
 Requirements

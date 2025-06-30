@@ -8,6 +8,14 @@ Presentation
 *feli* is a javascript library for building a static web-server for installing and running locally your front-end web-app.
 
 
+Links
+-----
+
+- [source code](https://github.com/charlyoleg2/feli_mono)
+- [html-page](https://charlyoleg2.github.io/feli_mono/)
+- [npm-package](https://www.npmjs.com/package/feli)
+
+
 Requirements
 ------------
 
