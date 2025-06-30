@@ -23,30 +23,35 @@ npm i -D feli
 ```
 
 
-Getting started
----------------
+Usage
+-----
+
+Here the typical code for creating a mini-server:
 
 ```javascript
+import { feli_cli } from '../dist/index.js';
+import process from 'node:process';
 
+const scrDir = import.meta.dirname;
+const defaultPublicDir = `${scrDir}/public`;
 
+try {
+	await feli_cli(defaultPublicDir, process.argv);
+} catch (err) {
+	console.error(`CATCH ERROR: ${err}`);
+}
 ```
 
-Mini-server usage
------------------
+
+Usage of the created mini-server
+--------------------------------
+
+If you publish your mini-server, you can use it as following
 
 ```bash
+npm i myMiniServer
 npx myMiniServer
 npx myMiniServer --help
-```
-
-
-Mini-server usage without installation
---------------------------------------
-
-```bash
-npx myMiniServer
-npx --package=myMiniServerPkg myMiniServer
-npx --package=myMiniServerPkg myMiniServer --help
 ```
 
 
@@ -57,7 +62,7 @@ Development
 git clone https://github.com/charlyoleg2/feli_mono
 cd feli_mono
 npm install
-npm run ci
-npm -w feli run run
+npm -w feli run ci
+npm -w feli run test-feli
 ```
 
