@@ -6,7 +6,7 @@
 		"build": "fse copy src build",
 		"preview": "serve build",
 		"ci": "run-s build",
-		"clean": "rimraf dist node_modules"
+		"clean": "rimraf build node_modules dist"
 	},
 	"devDependencies": {
 		"@atao60/fse-cli": "^0.1.9",
