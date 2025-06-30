@@ -3,15 +3,15 @@
 	"type": "module",
 	"version": "0.5.0",
 	"scripts": {
-		"build": "fse copy src build",
+		"build": "shx cp -r src build",
 		"preview": "serve build",
 		"ci": "run-s build",
 		"clean": "rimraf build node_modules dist"
 	},
 	"devDependencies": {
-		"@atao60/fse-cli": "^0.1.9",
 		"npm-run-all2": "^8.0.4",
 		"rimraf": "^6.0.1",
-		"serve": "^14.2.4"
+		"serve": "^14.2.4",
+		"shx": "^0.4.0"
 	}
 }

@@ -58,7 +58,7 @@
 		"test:unit": "vitest",
 		"test:unit:once": "vitest --run",
 		"clean_public": "rimraf dist/public",
-		"copy_ui": "fse copy ../myWebUI/build dist/public",
+		"copy_ui": "shx cp -r ../myWebUI/build dist/public",
 		"checkCopy": "ls -l dist/public/index.html",
 		"copy_public": "run-s clean_public copy_ui checkCopy",
 		"ci": "run-s check build pretty lint test:unit:once copy_public",
@@ -67,7 +67,6 @@
 		"clean": "rimraf node_modules build dist tmp"
 	},
 	"devDependencies": {
-		"@atao60/fse-cli": "^0.1.9",
 		"@eslint/js": "^9.10.0",
 		"@types/eslint__js": "^8.42.3",
 		"eslint": "^9.30.0",
@@ -75,6 +74,7 @@
 		"npm-run-all2": "^8.0.4",
 		"prettier": "^3.6.2",
 		"rimraf": "^6.0.1",
+		"shx": "^0.4.0",
 		"tsup": "^8.5.0",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.35.0",

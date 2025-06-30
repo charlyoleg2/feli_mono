@@ -48,7 +48,7 @@
 		"versions": "run-s feli:version myWebUI:version check-feli:version create-feli:version feli-pages:version",
 		"gh-publish": "run-s feli:publish create-feli:publish",
 		"gen_apidoc": "typedoc",
-		"cp_apidoc": "fse copy build/apidoc pkg/feli-pages/dist/docs/apidoc",
+		"cp_apidoc": "shx cp -r build/apidoc pkg/feli-pages/dist/docs/apidoc",
 		"apidoc": "run-s gen_apidoc cp_apidoc",
 		"serve_apidoc": "serve build/apidoc",
 		"serve_pages": "serve pkg/feli-pages/dist",
@@ -56,10 +56,10 @@
 		"ls-pkg": "ls -la pkg"
 	},
 	"devDependencies": {
-		"@atao60/fse-cli": "^0.1.9",
 		"npm-run-all2": "^8.0.4",
 		"rimraf": "^6.0.1",
 		"serve": "^14.2.4",
+		"shx": "^0.4.0",
 		"typedoc": "^0.28.7"
 	}
 }
