@@ -3,7 +3,7 @@
 
 import { feli_cli } from '../dist/index.js';
 import process from 'node:process';
-import path from 'node:path':
+import path from 'node:path';
 
 const scrDir = import.meta.dirname;
 const defaultPublicDir = path.join(scrDir, 'public');

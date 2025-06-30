@@ -5,7 +5,7 @@ import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 import fs from 'node:fs';
 //import process from 'node:process';
-//import path from 'node:path':
+//import path from 'node:path';
 import express from 'express';
 import open from 'open';
 import getport from 'get-port';
