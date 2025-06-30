@@ -8,5 +8,9 @@ const scrDir = import.meta.dirname;
 const defaultPublicDir = `${scrDir}/public`;
 
 //console.log('check-feli.ts says Hello!');
-await feli_cli(defaultPublicDir, process.argv);
+try {
+	await feli_cli(defaultPublicDir, process.argv);
+} catch (err) {
+	console.error(`Error from feli: ${err}`);
+}
 //console.log('check-feli.ts says Bye!');
