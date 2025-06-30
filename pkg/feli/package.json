@@ -61,7 +61,8 @@
 		"test:unit": "vitest",
 		"test:unit:once": "vitest --run",
 		"ci": "run-s check build pretty lint test:unit:once",
-		"clean": "rimraf node_modules build dist tmp"
+		"clean": "rimraf node_modules build dist tmp",
+		"run-test": "node scr/test-feli.js"
 	},
 	"dependencies": {
 		"express": "^5.1.0",

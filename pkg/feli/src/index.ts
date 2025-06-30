@@ -19,6 +19,7 @@ function sleep(ms: number) {
 }
 
 async function mini_server(aDirectory: string, aBrowser: boolean, aPort: number) {
+	//console.log(`dbg022: aDirectory: ${aDirectory}, aBrowser: ${aBrowser}, aPort: ${aPort}`);
 	const chost = '127.0.0.1';
 
 	// sanity checks for aDirectory
