@@ -1,6 +1,6 @@
 {
 	"name": "check-feli",
-	"description": "library for making quickly your mini-server for your front-end only web-app",
+	"description": "an example package how to use feli",
 	"version": "0.5.3",
 	"private": true,
 	"repository": {
@@ -17,12 +17,6 @@
 		"local installation"
 	],
 	"type": "module",
-	"exports": {
-		".": {
-			"types": "./dist/feli.d.ts",
-			"default": "./dist/feli.js"
-		}
-	},
 	"files": [
 		"dist/",
 		"!dist/**/*.d.ts",
@@ -30,6 +24,9 @@
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
 	],
+	"bin": {
+		"check-feli": "dist/check-feli-cli.js"
+	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
@@ -69,20 +66,10 @@
 		"run-help": "node dist/check-feli.js --help",
 		"clean": "rimraf node_modules build dist tmp"
 	},
-	"dependencies": {
-		"express": "^5.1.0",
-		"fs-extra": "^11.3.0",
-		"get-port": "^7.1.0",
-		"open": "^10.1.2",
-		"yargs": "^18.0.0"
-	},
 	"devDependencies": {
 		"@atao60/fse-cli": "^0.1.9",
 		"@eslint/js": "^9.10.0",
 		"@types/eslint__js": "^8.42.3",
-		"@types/express": "^5.0.3",
-		"@types/fs-extra": "^11.0.4",
-		"@types/yargs": "^17.0.33",
 		"eslint": "^9.30.0",
 		"eslint-config-prettier": "^10.1.5",
 		"npm-run-all2": "^8.0.4",
