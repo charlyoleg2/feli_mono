@@ -10,8 +10,12 @@
 </script>
 
 <header>
-	<a href="{base}/">F</a>
-	<h1>Feli pages</h1>
+	<a href="{base}/" style="text-decoration:none;color:navy;">
+		<h1>
+			<img src="{base}/feli_logo.svg" alt="Feli's logo" width="42" height="42" />
+			Feli pages
+		</h1>
+	</a>
 </header>
 
 <main>
