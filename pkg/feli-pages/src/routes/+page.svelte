@@ -3,4 +3,10 @@
 </script>
 
 <h1>Feli pages</h1>
-<p><a href="{base}/apidoc/" rel="external">Feli API</a></p>
+
+<h2>Docs of Feli</h2>
+<ol>
+	<li><a href="{base}/apidoc/" rel="external">Feli API</a></li>
+	<li><a href="{base}/docs/concepts/">Feli concepts</a></li>
+	<li><a href="{base}/docs/readme/">readme</a></li>
+</ol>

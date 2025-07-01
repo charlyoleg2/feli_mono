@@ -1,0 +1,17 @@
+---
+title: Feli concepts
+category: documentation
+---
+
+<!--script lang="ts">
+	import { base } from '$app/paths';
+</script-->
+
+
+# {title}
+
+## Concept aorund Feli
+
+A front-end-only web-app could be deployed on a CDN (like cloudflare) or could be installed locally.
+
+
