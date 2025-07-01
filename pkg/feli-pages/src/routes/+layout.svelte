@@ -10,7 +10,7 @@
 </script>
 
 <header>
-	<a href={base}>F</a>
+	<a href="{base}/">F</a>
 	<h1>Feli pages</h1>
 </header>
 
@@ -23,8 +23,8 @@
 	<ol>
 		<li><a href="https://www.npmjs.com/package/feli">npm package</a></li>
 		<li><a href="https://www.npmjs.com/package/create-feli">npm package create</a></li>
-		<li><a href="https://github.com/charlyoleg2/feli_mon">Github</a></li>
-		<li><a href="https://charlyoleg2.github.io/feli_mon">Github pages</a></li>
+		<li><a href="https://github.com/charlyoleg2/feli_mono">Github</a></li>
+		<li><a href="https://charlyoleg2.github.io/feli_mono">Github pages</a></li>
 	</ol>
 </footer>
 
