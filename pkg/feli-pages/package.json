@@ -28,7 +28,7 @@
 		"lint": "prettier --check . && eslint .",
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run",
-		"ci": "run-s build lint check test",
+		"ci": "run-s prepare build lint check test",
 		"github-pages-fix": "touch build/.nojekyll",
 		"clean": "rimraf .svelte-kit build node_modules static/pgdsvg"
 	},
