@@ -19,6 +19,12 @@ The mono-repo [feli\_mono](https://github.com/charlyoleg2/feli_mono) publishes t
 And it generates those [html-pages](https://charlyoleg2.github.io/feli_mono/)
 
 
+Alternatives
+------------
+
+[deno deploy](https://deno.com/deploy) may propose a way to install locally pure front-end web-app.
+
+
 Requirements
 ------------
 
