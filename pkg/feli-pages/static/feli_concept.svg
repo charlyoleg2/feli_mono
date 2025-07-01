@@ -3,8 +3,8 @@
 
 <svg
    width="566.79968"
-   height="525.35571"
-   viewBox="0 0 149.96575 139.00037"
+   height="566.79962"
+   viewBox="0 0 149.96575 149.96573"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.2 (1:1.4.2+202505120737+ebf0e940d0)"
@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="px"
-     inkscape:zoom="2.2198669"
+     inkscape:zoom="1.1099335"
      inkscape:cx="284.70175"
-     inkscape:cy="330.42522"
+     inkscape:cy="603.18932"
      inkscape:window-width="1854"
      inkscape:window-height="1131"
      inkscape:window-x="0"
@@ -36,13 +36,31 @@
        x="-2.2819284e-15"
        y="0"
        width="149.96576"
-       height="139.00037"
+       height="149.96573"
        id="page2"
        margin="0"
        bleed="0" />
   </sodipodi:namedview>
   <defs
      id="defs1">
+    <rect
+       x="468.49655"
+       y="361.2829"
+       width="124.33177"
+       height="33.335331"
+       id="rect42" />
+    <rect
+       x="-227.04063"
+       y="522.55383"
+       width="171.18143"
+       height="61.264931"
+       id="rect22" />
+    <rect
+       x="-245.05972"
+       y="425.2507"
+       width="179.29002"
+       height="50.453472"
+       id="rect21" />
     <rect
        x="246.86165"
        y="609.94647"
@@ -245,19 +263,45 @@
        width="202.71486"
        height="54.958248"
        id="rect17-6" />
+    <rect
+       x="270.66406"
+       y="327.9476"
+       width="156.56609"
+       height="38.741062"
+       id="rect11-9" />
+    <marker
+       style="overflow:visible"
+       id="ArrowWide-2-6"
+       refX="0"
+       refY="0"
+       orient="auto-start-reverse"
+       inkscape:stockid="Wide arrow"
+       markerWidth="1"
+       markerHeight="1"
+       viewBox="0 0 1 1"
+       inkscape:isstock="true"
+       inkscape:collect="always"
+       preserveAspectRatio="xMidYMid">
+      <path
+         style="fill:none;stroke:context-stroke;stroke-width:1;stroke-linecap:butt"
+         d="M 3,-3 0,0 3,3"
+         transform="rotate(180,0.125,0)"
+         sodipodi:nodetypes="ccc"
+         id="path1-6-0" />
+    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-2.9666177,-87.82906)">
+     transform="translate(-2.9666177,-76.863695)">
     <rect
        style="fill:#ffffff;stroke:#ffffff;stroke-width:0.264583;stroke-linejoin:round"
        id="rect20"
        width="149.70117"
-       height="138.73578"
+       height="149.70114"
        x="3.0989094"
-       y="87.961357"
+       y="76.995987"
        inkscape:export-filename="feli_concept.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -266,8 +310,8 @@
        id="rect12"
        width="37.902046"
        height="8.5815954"
-       x="72.228432"
-       y="90.345131" />
+       x="55.065243"
+       y="82.722092" />
     <rect
        style="fill:#ffe6d5;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round"
        id="rect12-2"
@@ -284,15 +328,11 @@
        y="0"><tspan
          x="137.88477"
          y="415.16222"
-         id="tspan1">webUI-pkg
+         id="tspan2">webUI-pkg
 </tspan><tspan
          x="89.876953"
          y="435.16222"
-         id="tspan8">Frontend only webUI
-</tspan><tspan
-         x="147.48633"
-         y="455.16222"
-         id="tspan12">sources</tspan></text>
+         id="tspan3">Frontend only webUI</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-6.9704158,11.031357)"
@@ -300,7 +340,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect4);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="97.302734"
          y="553.90832"
-         id="tspan20">html,css,js</tspan></text>
+         id="tspan4">html,css,js</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-6.9704158,11.031357)"
@@ -308,23 +348,27 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect5);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="58.5625"
          y="662.92394"
-         id="tspan21">CDN: Content Delivery Network
+         id="tspan5">CDN: Content Delivery Network
 </tspan><tspan
          x="58.5625"
          y="682.92394"
-         id="tspan22">- CloudFlare
+         id="tspan6">- CloudFlare
 </tspan><tspan
          x="58.5625"
          y="702.92394"
-         id="tspan23">- Github pages</tspan></text>
+         id="tspan7">- Github pages</tspan></text>
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-10.546079,11.508113)"
+       transform="matrix(0.26458333,0,0,0.26458333,-10.784457,9.6010918)"
        id="text5"
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect6);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="182.89453"
          y="494.44543"
-         id="tspan24">CI/CD</tspan></text>
+         id="tspan8">CI/CD
+</tspan><tspan
+         x="182.89453"
+         y="514.44543"
+         id="tspan9">build</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-10.307701,11.031357)"
@@ -332,7 +376,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect7);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="182.89453"
          y="607.06457"
-         id="tspan25">push</tspan></text>
+         id="tspan10">push</tspan></text>
     <rect
        style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round"
        id="rect8"
@@ -357,7 +401,7 @@
        ry="6.4361968" />
     <path
        style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide)"
-       d="m 36.652697,131.65053 -2.1454,17.63995"
+       d="m 37.129452,130.68099 -2.1454,18.84778"
        id="path8" />
     <path
        style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide)"
@@ -365,12 +409,12 @@
        id="path9" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-1.0583333,12.700002)"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.0583333,13.758336)"
        id="text9"
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect9);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="273.89062"
          y="392.63683"
-         id="tspan26">myMiniServer-pkg</tspan></text>
+         id="tspan11">myMiniServer-pkg</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-0.05746426,13.415135)"
@@ -378,7 +422,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect10);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="291.00781"
          y="425.97277"
-         id="tspan27">/dist/public/</tspan></text>
+         id="tspan12">/dist/public/</tspan></text>
     <path
        style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide)"
        d="m 52.890925,155.72667 c 0,0 25.183807,1.54294 35.382962,-5.48268 6.731636,-4.63704 13.736943,-21.93075 13.736943,-21.93075"
@@ -393,24 +437,24 @@
        y="111.8651" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,2.7599384,5.2443084)"
+       transform="matrix(0.26458333,0,0,0.26458333,-14.403252,-2.3787236)"
        id="text11"
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect11);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="270.66406"
          y="342.18371"
-         id="tspan28">feli library</tspan></text>
+         id="tspan13">feli library</tspan></text>
     <path
-       style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide-2)"
-       d="m 85.4148,100.10531 3.81404,10.40163"
+       style="fill:none;stroke:#008080;stroke-width:0.264582;stroke-linejoin:round;marker-end:url(#ArrowWide-2)"
+       d="m 84.356466,92.795517 3.81404,21.043293"
        id="path9-7" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-22.884255,-80.571647)"
+       transform="matrix(0.26458333,0,0,0.26458333,-42.192844,-88.43306)"
        id="text12"
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect13);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="420.74609"
          y="706.17003"
-         id="tspan29">import</tspan></text>
+         id="tspan14">import</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-5.2916669,0)"
@@ -418,7 +462,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect14);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="437.86328"
          y="599.85753"
-         id="tspan30">npmjs.com</tspan></text>
+         id="tspan15">npmjs.com</tspan></text>
     <rect
        style="fill:none;stroke:#aa0000;stroke-width:0.264583;stroke-linejoin:round"
        id="rect8-1-3"
@@ -438,7 +482,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect15);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="438.76562"
          y="803.47277"
-         id="tspan31">publish</tspan></text>
+         id="tspan16">publish</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-4.5291754,-1.9070212)"
@@ -446,7 +490,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect16);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="395.51953"
          y="713.37707"
-         id="tspan32">npm i myMiniServer</tspan></text>
+         id="tspan17">npm i myMiniServer</tspan></text>
     <path
        style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide-1)"
        d="m 123.84055,163.9012 -2.1454,15.22429"
@@ -458,11 +502,11 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect17);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="261.27734"
          y="936.81457"
-         id="tspan33">install
+         id="tspan18">install
 </tspan><tspan
          x="261.27734"
          y="956.81457"
-         id="tspan34">locally</tspan></text>
+         id="tspan19">locally</tspan></text>
     <rect
        style="fill:#ffe6d5;stroke:#ff6600;stroke-width:0.264583;stroke-linejoin:round"
        id="rect12-2-1"
@@ -477,7 +521,7 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect16-0);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="395.51953"
          y="713.37707"
-         id="tspan35">npx myMiniServer</tspan></text>
+         id="tspan20">npx myMiniServer</tspan></text>
     <path
        style="fill:none;stroke:#008080;stroke-width:0.264583;stroke-linejoin:round;marker-end:url(#ArrowWide-1-0)"
        d="m 114.82298,190.68018 -2.1454,21.51666"
@@ -489,11 +533,11 @@
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Italic';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect17-6);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="261.27734"
          y="936.81457"
-         id="tspan36">use the webUI
+         id="tspan22">use the webUI
 </tspan><tspan
          x="261.27734"
          y="956.81457"
-         id="tspan37">locally</tspan></text>
+         id="tspan23">locally</tspan></text>
     <text
        xml:space="preserve"
        transform="scale(0.26458333)"
@@ -501,7 +545,7 @@
        style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Italic';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect18);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="39.642578"
          y="785.45324"
-         id="tspan38">use the webUI via internet</tspan></text>
+         id="tspan24">use the webUI via internet</tspan></text>
     <text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,13.110771,-6.912952)"
@@ -509,6 +553,56 @@
        style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect19);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
          x="246.86133"
          y="624.18371"
-         id="tspan39">copy</tspan></text>
+         id="tspan25">copy</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,71.751671,-9.0583501)"
+       id="text7"
+       style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect21);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="-203.42285"
+         y="439.48644"
+         id="tspan26">myMonoRepo</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,101.54888,-32.896115)"
+       id="text21"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono Italic';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect22);fill:#0000ff;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="-175.05566"
+         y="536.79113"
+         id="tspan27">sources</tspan></text>
+    <rect
+       style="fill:none;stroke:#0000ff;stroke-width:0.264584;stroke-linejoin:round"
+       id="rect8-35"
+       width="108.46183"
+       height="30.03558"
+       x="9.7829695"
+       y="102.44836" />
+    <rect
+       style="fill:#f6ffd5;stroke:#668000;stroke-width:0.264582;stroke-linejoin:round"
+       id="rect12-7"
+       width="40.5242"
+       height="8.5815954"
+       x="106.46606"
+       y="79.263863" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,35.939229,-5.8369551)"
+       id="text11-0"
+       style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect11-9);display:inline;fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="270.66406"
+         y="342.18371"
+         id="tspan28">create-feli bin</tspan></text>
+    <path
+       style="fill:none;stroke:#008080;stroke-width:0.264582;stroke-linejoin:round;marker-end:url(#ArrowWide-2-6)"
+       d="m 117.59778,88.473838 -6.62052,22.488672"
+       id="path9-7-6" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.349148,-3.0989094)"
+       id="text42"
+       style="font-size:16px;line-height:normal;font-family:'Liberation Mono';-inkscape-font-specification:'Liberation Mono';text-align:center;text-decoration-color:#000000;white-space:pre;shape-inside:url(#rect42);fill:#000000;stroke-width:1;-inkscape-stroke:none;stop-color:#000000"><tspan
+         x="492.25586"
+         y="375.51964"
+         id="tspan29">scaffold</tspan></text>
   </g>
 </svg>

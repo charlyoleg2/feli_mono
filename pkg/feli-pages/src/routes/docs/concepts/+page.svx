@@ -14,4 +14,14 @@ category: documentation
 
 A front-end-only web-app could be deployed on a CDN (like cloudflare) or could be installed locally.
 
-<img src="{base}/feli_concept.svg" alt="feli_concept.svg" />
+![feli_concept.svg]({base}/feli_concept.svg)
+
+A typical mono-repo of a *universal* javascript-library.
+
+![typical_monorepo.svg]({base}/typical_monorepo.svg)
+
+The *universal* Abc library can be:
+- used as API via importing a npm-package
+- imported and exposed in a CLI-tool
+- used and exposed in a web-UI deployed on a CDN
+- the web-UI can be also installed locally with the helper library **feli**
