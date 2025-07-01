@@ -3,9 +3,9 @@ title: Feli concepts
 category: documentation
 ---
 
-<!--script lang="ts">
+<script lang="ts">
 	import { base } from '$app/paths';
-</script-->
+</script>
 
 
 # {title}
@@ -14,4 +14,4 @@ category: documentation
 
 A front-end-only web-app could be deployed on a CDN (like cloudflare) or could be installed locally.
 
-
+<img src="{base}/feli_concept.svg" alt="feli_concept.svg" />
