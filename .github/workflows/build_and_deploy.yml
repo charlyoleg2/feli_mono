@@ -43,7 +43,7 @@ jobs:
               uses: crazy-max/ghaction-github-pages@v4
               with:
                   target_branch: gh-pages
-                  build_dir: pkg/feli-pages/dist
+                  build_dir: pkg/feli-pages/build
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
