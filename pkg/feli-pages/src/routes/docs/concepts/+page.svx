@@ -10,7 +10,7 @@ category: documentation
 
 # {title}
 
-## Concept aorund Feli
+## Concept around Feli
 
 A front-end-only web-app could be deployed on a CDN (like cloudflare) or could be installed locally.
 

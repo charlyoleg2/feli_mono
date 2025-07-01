@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<h1>Feli pages</h1>
+<h1>Feli, the Front-End Locally Installed</h1>
 
 <h2>Docs of Feli</h2>
 <ol>
