@@ -1,11 +1,14 @@
 // create-feli-list.ts
 
 const template_file_list = [
-	'.editorconfig',
+	'.eslint.config.js',
 	'.gitignore',
 	'package.json',
+	'.prettierignore',
 	'README.md',
-	'{{projName}}_repos.yml'
+	'tsconfig.json',
+	'src/{{pkgName}}.test.ts',
+	'src/{{pkgName}}.ts'
 ];
 
 export { template_file_list };

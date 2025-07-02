@@ -16,10 +16,9 @@ if (argN > 1) {
 	console.log(`warn376: ${argN} arguments provided but only one supported!`);
 }
 
-const projName = 'blabla';
+const projName = 'webAppAbc-uis';
 const cfg1: tCfg1 = {
-	projName: `${projName}`,
-	repoName: `${projName}_uis`
+	pkgName: `${pkgName}`
 };
 await generate_boirlerplate(cfg1, preDir);
 await sleep(100); // for fun

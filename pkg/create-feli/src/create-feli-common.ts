@@ -1,16 +1,13 @@
 // create-feli-common.ts
 
 interface tCfg1 {
-	projName: string;
-	repoName: string;
+	pkgName: string;
 }
 interface tCfg2 {
-	projName: string;
-	ProjName: string;
-	ProjNameUnderline: string;
-	repoName: string;
-	RepoName: string;
-	RepoNameUnderline: string;
+	pkgName: string;
+	PkgName: string;
+	PkgNameUnderline: string;
+
 }
 interface tResp {
 	vim: string;

@@ -12,14 +12,14 @@ import { prefixOutputPath } from './create-feli-common';
 
 // first message
 const firstMsg =
-	`Create a new ${chalk.italic('feli-top-repo')}` +
+	`Create a new ${chalk.italic('feli-package')}` +
 	` with ${chalk.italic(packag.name)} version ${chalk.italic(packag.version)}`;
 
 console.log(firstMsg);
 
-// get optional project-name from command-line
-const projName = process.argv[2] || 'blabla';
-//console.log(`dbg016: projName: ${projName}`);
+// get optional package-name from command-line
+const pkgName = process.argv[2] || 'webAppAbc-uis';
+//console.log(`dbg016: pkgName: ${pkgName}`);
 
 const argN = process.argv.length - 2;
 if (argN > 1) {
@@ -27,20 +27,14 @@ if (argN > 1) {
 }
 
 // questions
-prom.intro(chalk.inverse(' Your new feli-top-repo '));
+prom.intro(chalk.inverse(' Your new feli-package '));
 const pCfg = await prom.group(
 	{
-		projName: () =>
+		pkgName: () =>
 			prom.text({
-				message: 'Name of the project?',
-				initialValue: `${projName}`
-				//placeholder: `${projName}`
-			}),
-		repoName: () =>
-			prom.text({
-				message: 'Name of the top-repository?',
-				initialValue: `${projName}_uis`
-				//placeholder: `${projName}_uis`
+				message: 'Name of the package?',
+				initialValue: `${pkgName}`
+				//placeholder: `${pkgName}`
 			})
 	},
 	{
@@ -50,11 +44,10 @@ const pCfg = await prom.group(
 		}
 	}
 );
-prom.outro('Your new feli-top-repository will be boilerplated!');
+prom.outro(`Your package ${pkgName} will be boilerplated!`);
 
 const cfg1: tCfg1 = {
-	projName: pCfg.projName,
-	repoName: pCfg.repoName
+	pkgName: pCfg.pkgName
 };
 const preDir = prefixOutputPath();
 const resp = await generate_boirlerplate(cfg1, preDir);
@@ -68,16 +61,14 @@ function styl(str: string): string {
 
 const lastMsg = `
 Next steps:
-  1: ${styl(`cd ${pCfg.repoName}`)}
-  2: ${styl(`npm install`)}
-  3: ${styl('git init && git add -A && git commit -m "Initial commit"')} (optional)
-  4: ${styl(`${resp.vim}`)} (optional)
-  5: ${styl(`npm run`)}
-  6: ${styl(`npm run vag-list`)}
-  7: ${styl(`npm run vag-clone`)}
-  8: ${styl(`npm run vag-pull`)}
-  9: ${styl(`npm run vag-status`)}
- 10: ${styl(`npm run vag-diff`)}
+  1: ${styl(`# adapt the path of copy-from`)}
+  1: ${styl(`vim ${pCfg.pkgName}/package.json`)}
+  2: ${styl(`# adapt the path of copy-from`)}
+  2: ${styl(`vim ${pCfg.pkgName}/src/${pCfg.pkgName}.ts`)}
+  3: ${styl(`# integrate ${pCfg.pkgName} in the mono-repo scripts`)}
+  3: ${styl(`vim ../package.json #`)}
+  4: ${styl(`# install the dependencies of ${pCfg.pkgName}`)}
+  4: ${styl(`npm install`)}
 `;
 
 console.log(lastMsg);

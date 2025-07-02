@@ -37,8 +37,7 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 	try {
 		// compute read and write path
 		const onePathIn = Handlebars.compile(onePath)({
-			projName: 'projAbc',
-			repoName: 'projAbc-uis'
+			pkgName: 'webAppXyz-uis'
 		});
 		const onePathOut = Handlebars.compile(onePath)(cfg2);
 		// try to read the file.handlebars. If it doesn"t exist, just copy the file
@@ -47,7 +46,7 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 		let fileBin = false;
 		let fileStr2 = '';
 		//let fileBuffer2 = Buffer.alloc(0);
-		const outPath = `${preDir}/${cfg2.repoName}/${onePathOut}`;
+		const outPath = `${preDir}/${cfg2.pkgName}/${onePathOut}`;
 		try {
 			await access(fileIn1);
 			try {
@@ -90,24 +89,20 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 
 async function generate_boirlerplate(cfg1: tCfg1, preDir: string): Promise<tResp> {
 	console.log(`Boilerplate with:
-  project name     : ${cfg1.projName}
-  repository name  : ${cfg1.repoName}`);
+  package name     : ${cfg1.pkfName}`);
 	const cfg2: tCfg2 = {
-		projName: cfg1.projName,
-		ProjName: firstLetterCapital(cfg1.projName),
-		ProjNameUnderline: underline(cfg1.projName),
-		repoName: cfg1.repoName,
-		RepoName: firstLetterCapital(cfg1.repoName),
-		RepoNameUnderline: underline(cfg1.repoName)
+		pkgName: cfg1.pkgName,
+		PkgName: firstLetterCapital(cfg1.pkgName),
+		PkgNameUnderline: underline(cfg1.pkgName)
 	};
-	//console.log(`dbg102: RepoNameUnderline: ${cfg2.RepoNameUnderline}`);
+	//console.log(`dbg102: PkgNameUnderline: ${cfg2.PkgNameUnderline}`);
 	for (const fpath of template_file_list) {
 		await oneFile(fpath, cfg2, preDir);
 	}
-	console.log(`generate ${template_file_list.length} files in ${preDir}/${cfg1.repoName}/`);
+	console.log(`generate ${template_file_list.length} files in ${preDir}/${cfg1.pkgName}/`);
 	await sleep(100);
 	const rResp: tResp = {
-		vim: `vim ${cfg1.projName}_repos.yml`
+		vim: `vim ${cfg1.pkgName}/src/${cfg1.pkgName}.ts`
 	};
 	return rResp;
 }
