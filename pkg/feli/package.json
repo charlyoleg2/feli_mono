@@ -25,7 +25,7 @@
 	},
 	"files": [
 		"dist/",
-		"!dist/**/*.d.ts",
+		"dist/**/*.d.ts",
 		"!dist/**/*.map",
 		"!dist/**/*.test.*",
 		"!dist/**/*.spec.*"
