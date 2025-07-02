@@ -10,19 +10,36 @@ Presentation
 Usually, this mini-server package {{pkgName}} is part of a mono-repo containing an other package for the web-ui and potentially an *universal* library backing the web-ui.
 
 
-Getting started
----------------
+Requirements
+------------
+
+- [node](https://nodejs.org) > 22.0.0
+- [npm](https://docs.npmjs.com/cli) > 11.0.0
+
+
+Installation
+------------
 
 ```bash
-cd XYZ_mono/pkg/
-npm create feli@latest
-# adjust the script copy_ui for the exact path of copy-from
-vim {{pkgName}}/package.json
-# integrate the scripts of {{pkgName}} into the mono-repo top-level scripts
-vim ../package.json
-# install the {{pkgName}} dependencies
-npm i
-npm run ci
-npm run publish
+npm i -D {{pkgName}}
+```
+
+
+Usage
+-----
+
+```bash
+npx {{pkgName}}
+npx {{pkgName}} --help
+```
+
+
+Usage without installation
+--------------------------
+
+```bash
+npx {{pkgName}}
+npx --package={{pkgName}} {{pkgName}}
+npx --package={{pkgName}} {{pkgName}} --help
 ```
 
