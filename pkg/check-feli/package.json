@@ -1,7 +1,7 @@
 {
 	"name": "check-feli",
 	"description": "an example package how to use feli",
-	"version": "0.5.3",
+	"version": "0.5.4",
 	"private": true,
 	"repository": {
 		"type": "git",
