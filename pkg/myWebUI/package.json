@@ -1,7 +1,7 @@
 {
 	"name": "myWebUI",
 	"type": "module",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"scripts": {
 		"build": "shx cp -r src build",
 		"preview": "serve build",
