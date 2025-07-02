@@ -27,7 +27,7 @@
 		"feli:publish": "npm -w feli publish --provenance",
 		"myWebUI:clean": "npm -w feli run clean",
 		"myWebUI:ci": "npm -w myWebUI run ci",
-		"myWebUI:version": "npm -w myWebUI run version",
+		"myWebUI:version": "npm -w myWebUI version patch",
 		"check-feli:clean": "npm -w check-feli run clean",
 		"check-feli:ci": "npm -w check-feli run ci",
 		"check-feli:run": "npm -w check-feli run run",
