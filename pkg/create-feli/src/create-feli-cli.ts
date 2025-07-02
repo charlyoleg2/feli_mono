@@ -63,12 +63,10 @@ const lastMsg = `
 Next steps:
   1: ${styl(`# adapt the path of copy-from`)}
   1: ${styl(`vim ${pCfg.pkgName}/package.json`)}
-  2: ${styl(`# adapt the path of copy-from`)}
-  2: ${styl(`vim ${pCfg.pkgName}/src/${pCfg.pkgName}.ts`)}
-  3: ${styl(`# integrate ${pCfg.pkgName} in the mono-repo scripts`)}
-  3: ${styl(`vim ../package.json #`)}
-  4: ${styl(`# install the dependencies of ${pCfg.pkgName}`)}
-  4: ${styl(`npm install`)}
+  2: ${styl(`# integrate ${pCfg.pkgName} in the mono-repo scripts`)}
+  2: ${styl(`vim ../package.json #`)}
+  3: ${styl(`# install the dependencies of ${pCfg.pkgName}`)}
+  3: ${styl(`npm install`)}
 `;
 
 console.log(lastMsg);

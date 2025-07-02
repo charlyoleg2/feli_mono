@@ -1,35 +1,84 @@
 {
-	"name": "{{projName}}_vag",
-	"version": "0.0.1",
-	"description": "top-repo that points to the other {{projName}} repositories",
+	"name": "{{pkgName}}",
+	"version": "0.1.0",
+	"description": "feli-package {{pkgName}} for installing locally the web-ui webAppAbc",
 	"private": true,
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MYNAME/{{projName}}_vag.git"
+		"url": "git+https://github.com/MYNAME/XYZ_mono.git"
 	},
-	"homepage": "https://github.com/MYNAME/{{projName}}_vag#readme",
+	"homepage": "https://MYNAME.github.io/XYZ_mono/",
 	"author": "MYNAME",
 	"license": "ISC",
 	"keywords": [
-		"{{projName}}",
-		"vag"
+		"feli",
+		"front-end locally installed"
 	],
 	"type": "module",
-	"main": "index.js",
+	"files": [
+		"dist/",
+		"!dist/**/*.d.ts",
+		"!dist/**/*.map",
+		"!dist/**/*.test.*",
+		"!dist/**/*.spec.*"
+	],
+	"bin": {
+		"{{pkgName}}": "dist/{{pkgName}}.js"
+	},
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"tsup": {
+		"entry": [
+			"src/{{pkgName}}.ts"
+		],
+		"format": "esm",
+		"splitting": false,
+		"dts": true,
+		"sourcemap": true,
+		"clean": true
+	},
+	"prettier": {
+		"useTabs": true,
+		"singleQuote": true,
+		"trailingComma": "none",
+		"printWidth": 100,
+		"plugins": [],
+		"overrides": []
+	},
 	"scripts": {
-		"vag-list": "vag --importYaml={{projName}}_repos.yml list",
-		"vag-clone": "vag --importYaml={{projName}}_repos.yml clone",
-		"vag-status": "vag --importYaml={{projName}}_repos.yml --only_configured status",
-		"vag-diff": "vag --importYaml={{projName}}_repos.yml --only_configured diff",
-		"vag-branch": "vag branch",
-		"vag-remote": "vag remote",
-		"vag-pull": "vag pull",
-		"vag-push": "vag push",
-		"vag-verify": "vag verify --importYaml={{projName}}_repos.yml",
-		"vag-versions": "vag versions",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "tsup --watch",
+		"build": "tsup",
+		"check": "tsc --noEmit",
+		"pretty": "prettier --check .",
+		"format": "prettier --write .",
+		"lint": "eslint .",
+		"test:unit": "vitest",
+		"test:unit:once": "vitest --run",
+		"clean_public": "rimraf dist/public",
+		"copy_ui": "shx cp -r ../myWebUI/build dist/public",
+		"checkCopy": "ls -l dist/public/index.html",
+		"copy_public": "run-s clean_public copy_ui checkCopy",
+		"ci": "run-s check build pretty lint test:unit:once copy_public",
+		"run": "node dist/{{pkgName}}.js",
+		"run-help": "node dist/{{pkgName}}.js --help",
+		"clean": "rimraf node_modules build dist tmp"
+	},
+	"dependencies": {
+		"feli": "^0.5.3"
 	},
 	"devDependencies": {
-		"vag_tools": "^0.1.0"
+		"@eslint/js": "^9.10.0",
+		"@types/eslint__js": "^8.42.3",
+		"eslint": "^9.30.1",
+		"eslint-config-prettier": "^10.1.5",
+		"npm-run-all2": "^8.0.4",
+		"prettier": "^3.6.2",
+		"rimraf": "^6.0.1",
+		"shx": "^0.4.0",
+		"tsup": "^8.5.0",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.35.1",
+		"vitest": "^3.2.4"
 	}
 }
