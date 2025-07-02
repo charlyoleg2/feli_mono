@@ -81,6 +81,6 @@
 		"vitest": "^3.2.4"
 	},
 	"dependencies": {
-		"feli": "^0.5.3"
+		"feli": "^0.5.5"
 	}
 }
