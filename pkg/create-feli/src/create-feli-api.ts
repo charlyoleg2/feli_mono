@@ -37,7 +37,7 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 	try {
 		// compute read and write path
 		const onePathIn = Handlebars.compile(onePath)({
-			pkgName: 'webAppXyz-uis'
+			pkgName: 'webAppAbc-uis'
 		});
 		const onePathOut = Handlebars.compile(onePath)(cfg2);
 		// try to read the file.handlebars. If it doesn"t exist, just copy the file

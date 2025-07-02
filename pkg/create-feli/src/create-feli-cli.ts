@@ -18,8 +18,8 @@ const firstMsg =
 console.log(firstMsg);
 
 // get optional package-name from command-line
-const pkgName = process.argv[2] || 'webAppAbc-uis';
-//console.log(`dbg016: pkgName: ${pkgName}`);
+const pkgNameInit = process.argv[2] || 'webAppAbc-uis';
+//console.log(`dbg016: pkgNameInit: ${pkgNameInit}`);
 
 const argN = process.argv.length - 2;
 if (argN > 1) {
@@ -33,8 +33,8 @@ const pCfg = await prom.group(
 		pkgName: () =>
 			prom.text({
 				message: 'Name of the package?',
-				initialValue: `${pkgName}`
-				//placeholder: `${pkgName}`
+				initialValue: `${pkgNameInit}`
+				//placeholder: `${pkgNameInit}`
 			})
 	},
 	{
@@ -44,7 +44,7 @@ const pCfg = await prom.group(
 		}
 	}
 );
-prom.outro(`Your package ${pkgName} will be boilerplated!`);
+prom.outro(`Your package ${pCfg.pkgName} will be boilerplated!`);
 
 const cfg1: tCfg1 = {
 	pkgName: pCfg.pkgName
@@ -62,11 +62,11 @@ function styl(str: string): string {
 const lastMsg = `
 Next steps:
   1: ${styl(`# adapt the path of copy-from`)}
-  1: ${styl(`${resp.vim}`)}
+     ${resp.vim}
   2: ${styl(`# integrate ${pCfg.pkgName} in the mono-repo scripts`)}
-  2: ${styl(`vim ../package.json #`)}
+     vim ../package.json
   3: ${styl(`# install the dependencies of ${pCfg.pkgName}`)}
-  3: ${styl(`npm install`)}
+     npm install
 `;
 
 console.log(lastMsg);
