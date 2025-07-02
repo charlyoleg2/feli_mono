@@ -1,6 +1,6 @@
 {
 	"name": "create-feli",
-	"version": "0.1.13",
+	"version": "1.0.0",
 	"description": "The npm-initializer for creating a new feli package",
 	"private": false,
 	"repository": {
