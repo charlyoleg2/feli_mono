@@ -62,7 +62,7 @@ function styl(str: string): string {
 const lastMsg = `
 Next steps:
   1: ${styl(`# adapt the path of copy-from`)}
-  1: ${styl(`vim ${pCfg.pkgName}/package.json`)}
+  1: ${styl(`${resp.vim}`)}
   2: ${styl(`# integrate ${pCfg.pkgName} in the mono-repo scripts`)}
   2: ${styl(`vim ../package.json #`)}
   3: ${styl(`# install the dependencies of ${pCfg.pkgName}`)}

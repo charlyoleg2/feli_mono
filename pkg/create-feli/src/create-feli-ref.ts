@@ -16,7 +16,7 @@ if (argN > 1) {
 	console.log(`warn376: ${argN} arguments provided but only one supported!`);
 }
 
-const projName = 'webAppAbc-uis';
+const pkgName = 'webAppAbc-uis';
 const cfg1: tCfg1 = {
 	pkgName: `${pkgName}`
 };

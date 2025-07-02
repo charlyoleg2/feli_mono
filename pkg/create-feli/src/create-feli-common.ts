@@ -7,7 +7,6 @@ interface tCfg2 {
 	pkgName: string;
 	PkgName: string;
 	PkgNameUnderline: string;
-
 }
 interface tResp {
 	vim: string;

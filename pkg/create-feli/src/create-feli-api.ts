@@ -89,7 +89,7 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 
 async function generate_boirlerplate(cfg1: tCfg1, preDir: string): Promise<tResp> {
 	console.log(`Boilerplate with:
-  package name     : ${cfg1.pkfName}`);
+  package name     : ${cfg1.pkgName}`);
 	const cfg2: tCfg2 = {
 		pkgName: cfg1.pkgName,
 		PkgName: firstLetterCapital(cfg1.pkgName),
@@ -102,7 +102,7 @@ async function generate_boirlerplate(cfg1: tCfg1, preDir: string): Promise<tResp
 	console.log(`generate ${template_file_list.length} files in ${preDir}/${cfg1.pkgName}/`);
 	await sleep(100);
 	const rResp: tResp = {
-		vim: `vim ${cfg1.pkgName}/src/${cfg1.pkgName}.ts`
+		vim: `vim ${cfg1.pkgName}/package.json`
 	};
 	return rResp;
 }
