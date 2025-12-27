@@ -6,7 +6,9 @@ import { hideBin } from 'yargs/helpers';
 import fs from 'node:fs';
 //import process from 'node:process';
 //import path from 'node:path';
-import express from 'express';
+import { Hono } from 'hono';
+import { serve } from '@hono/node-server';
+import { serveStatic } from '@hono/node-server/serve-static';
 import open from 'open';
 import getport from 'get-port';
 
@@ -40,19 +42,31 @@ async function mini_server(aDirectory: string, aBrowser: boolean, aPort: number)
 	}
 
 	// the main
-	const app = express();
+	const app = new Hono();
 
 	// static content
 	if (aDirectory !== '') {
-		app.use(express.static(aDirectory));
+		app.use('*', serveStatic({ root: aDirectory }));
 	}
 
 	// spin the http-server
-	app.listen(portnumber, chost, () => {
-		console.log(
-			`${packag.name} serves on port ${portnumber} for host ${chost} the directory:\n ${aDirectory} ...`
-		);
-	});
+	serve(
+		{
+			fetch: app.fetch,
+			port: portnumber
+		},
+		(info) => {
+			console.log(
+				`${packag.name} serves on port ${info.port} for host ${chost} the directory:\n ${aDirectory} ...`
+			);
+		}
+	);
+	// spin the express server
+	//app.listen(portnumber, chost, () => {
+	//	console.log(
+	//		`${packag.name} serves on port ${portnumber} for host ${chost} the directory:\n ${aDirectory} ...`
+	//	);
+	//});
 
 	// open the browser
 	await sleep(1000);
