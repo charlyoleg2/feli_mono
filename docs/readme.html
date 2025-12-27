@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/0.B6u7gyZm.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.B833rMuZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DifJizwZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CcblNRQY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DPZjC1Fc.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DjNWVEOR.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.Dr42IEjm.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CuJsSPy9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/C2gv9TMV.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CJ-UU89M.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.ByW2Modb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/9T2UNCxf.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Ay8r08iB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/C6wtuvaQ.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><header><a href="../" style="text-decoration:none;color:navy;"><h1><img src="../feli_logo.svg" alt="Feli's logo" width="42" height="42"/> Feli pages</h1></a></header> <main class="svelte-12qhfyh"><!----><h1>Feli_mono</h1> <h2>Presentation</h2> <p>The purpose of the project <em>Feli</em> is to <em>install locally</em> a pure front-end web-app. <em>Feli</em> means <strong>F</strong>ront <strong>E</strong>nd <strong>L</strong>ocally <strong>I</strong>nstalled.</p> <h2>Links</h2> <p>The mono-repo <a href="https://github.com/charlyoleg2/feli_mono" rel="nofollow">feli_mono</a> publishes two packages:</p> <ul><li><a href="https://www.npmjs.com/package/feli" rel="nofollow">feli</a></li> <li><a href="https://www.npmjs.com/package/create-feli" rel="nofollow">create-feli</a></li></ul> <p>And it generates those <a href="https://charlyoleg2.github.io/feli_mono/" rel="nofollow">html-pages</a></p> <h2>Alternatives</h2> <p><a href="https://deno.com/deploy" rel="nofollow">deno deploy</a> may propose a way to install locally pure front-end web-app.</p> <h2>Requirements</h2> <ul><li><a href="https://nodejs.org" rel="nofollow">node</a> > 22.0.0</li> <li><a href="https://docs.npmjs.com/cli" rel="nofollow">npm</a> > 11.0.0</li></ul> <h2>Installation</h2> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">npm</span> i <span class="token parameter variable">-D</span> feli</code><!----></pre> <h2>Usage</h2> <p>Here the typical code for creating a mini-server:</p> <pre class="language-javascript"><!----><code class="language-javascript"><span class="token keyword">import</span> <span class="token punctuation">&#123;</span> feli_cli <span class="token punctuation">&#125;</span> <span class="token keyword">from</span> <span class="token string">'../dist/index.js'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> process <span class="token keyword">from</span> <span class="token string">'node:process'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> path <span class="token keyword">from</span> <span class="token string">'node:path'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> scrDir <span class="token operator">=</span> <span class="token keyword">import</span><span class="token punctuation">.</span>meta<span class="token punctuation">.</span>dirname<span class="token punctuation">;</span>
+<span class="token keyword">const</span> defaultPublicDir <span class="token operator">=</span> path<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>scrDir<span class="token punctuation">,</span> <span class="token string">'public'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">try</span> <span class="token punctuation">&#123;</span>
+	<span class="token keyword">await</span> <span class="token function">feli_cli</span><span class="token punctuation">(</span>defaultPublicDir<span class="token punctuation">,</span> process<span class="token punctuation">.</span>argv<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>err<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+	console<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">&#96;</span><span class="token string">CATCH ERROR: </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">$&#123;</span>err<span class="token interpolation-punctuation punctuation">&#125;</span></span><span class="token template-punctuation string">&#96;</span></span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span></code><!----></pre> <h2>Dev</h2> <p>In a terminal, run:</p> <pre class="language-shell"><!----><code class="language-shell"><span class="token function">git</span> clone https://github.com/charlyoleg2/feli_mono.git
+<span class="token builtin class-name">cd</span> feli_mono
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token function">npm</span> run ci
+<span class="token function">node</span> pkg/check-feli/dist/check-feli.js
+<span class="token function">npm</span> run check-feli:run</code><!----></pre> <h2>Upgrade dependencies</h2> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">npm</span> outdated
+<span class="token function">npm</span> update <span class="token parameter variable">--save</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'npm update --save'</span></code><!----></pre> <p>or</p> <pre class="language-bash"><!----><code class="language-bash">npx npm-check-updates
+npx npm-check-updates <span class="token parameter variable">--upgrade</span>
+<span class="token function">npm</span> <span class="token function">install</span>
+<span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'npx npm-check-updates --upgrade'</span></code><!----></pre> <h2>Publish a new release</h2> <pre class="language-bash"><!----><code class="language-bash"><span class="token function">npm</span> run versions
+<span class="token function">git</span> commit <span class="token parameter variable">-am</span> <span class="token string">'increment sub-package versions'</span>
+<span class="token function">npm</span> version patch
+<span class="token function">git</span> push
+<span class="token function">git</span> push origin v0.5.3</code><!----></pre><!----><!----></main> <footer><h3>Links around Feli</h3> <ol><li><a href="https://www.npmjs.com/package/feli">npm package</a></li> <li><a href="https://www.npmjs.com/package/create-feli">npm package create</a></li> <li><a href="https://github.com/charlyoleg2/feli_mono">Github</a></li> <li><a href="https://charlyoleg2.github.io/feli_mono">Github pages</a></li></ol></footer><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_1rvy4pl = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						assets: "/feli_mono"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.B833rMuZ.js"),
+						import("../_app/immutable/entry/app.Dr42IEjm.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
