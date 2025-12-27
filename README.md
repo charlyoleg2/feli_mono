@@ -6,7 +6,7 @@ Presentation
 ------------
 
 The purpose of the project *Feli* is to *install locally* a pure front-end web-app.
-*Feli* means **F**rnt **E**nd **L**ocally **I**nstalled.
+*Feli* means **F**ront **E**nd **L**ocally **I**nstalled.
 
 
 Links
