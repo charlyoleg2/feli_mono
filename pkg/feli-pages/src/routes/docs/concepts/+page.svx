@@ -4,7 +4,7 @@ category: documentation
 ---
 
 <script lang="ts">
-	import { base } from '$app/paths';
+	import { asset } from '$app/paths';
 </script>
 
 
@@ -14,11 +14,11 @@ category: documentation
 
 A front-end-only web-app could be deployed on a CDN (like cloudflare) or could be installed locally.
 
-![feli_concept.svg]({base}/feli_concept.svg)
+![feli_concept.svg]({asset('/feli_concept.svg')})
 
 A typical mono-repo of a *universal* javascript-library.
 
-![typical_monorepo.svg]({base}/typical_monorepo.svg)
+![typical_monorepo.svg]({asset('/typical_monorepo.svg')})
 
 The *universal* Abc library can be:
 - used as API via importing a npm-package
