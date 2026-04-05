@@ -2,5 +2,5 @@
 	"name": "@parametrix/create-feli",
 	"version": "1.0.4",
 	"license": "ISC",
-	"exports": "src/create-feli-api.ts"
+	"exports": "./src/create-feli-api.ts"
 }

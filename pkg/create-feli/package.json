@@ -34,9 +34,9 @@
 	],
 	"tsup": {
 		"entry": [
-			"src/create-feli-api.ts",
-			"src/create-feli-ref.ts",
-			"src/create-feli-cli.ts"
+			"./src/create-feli-api.ts",
+			"./src/create-feli-ref.ts",
+			"./src/create-feli-cli.ts"
 		],
 		"format": "esm",
 		"splitting": false,
