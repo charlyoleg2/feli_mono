@@ -12,7 +12,7 @@ import { serveStatic } from '@hono/node-server/serve-static';
 import open from 'open';
 import getport from 'get-port';
 
-import packag from '../package.json';
+import packag from '../package.json' with { type: 'json' };
 
 //const scrDir = import.meta.dirname;
 
