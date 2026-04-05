@@ -82,7 +82,9 @@ async function mini_server(aDirectory: string, aBrowser: boolean, aPort: number)
 	console.log('Press ctrl-c to stop this http-server ...');
 }
 
-// cli
+/**
+ * The function that parses the cli and runs the mini-server
+ */
 async function feli_cli(defaultPublicDir: string, argv: string[]) {
 	const args = await yargs(hideBin(argv))
 		.version(packag.version)

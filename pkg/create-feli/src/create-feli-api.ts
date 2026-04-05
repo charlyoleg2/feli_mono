@@ -87,7 +87,10 @@ async function oneFile(onePath: string, cfg2: tCfg2, preDir: string): Promise<vo
 	}
 }
 
-async function generate_boirlerplate(cfg1: tCfg1, preDir: string): Promise<tResp> {
+/**
+ * The function that generates the boilerplate
+ */
+async function generate_boilerplate(cfg1: tCfg1, preDir: string): Promise<tResp> {
 	console.log(`Boilerplate with:
   package name     : ${cfg1.pkgName}`);
 	const cfg2: tCfg2 = {
@@ -107,4 +110,4 @@ async function generate_boirlerplate(cfg1: tCfg1, preDir: string): Promise<tResp
 	return rResp;
 }
 
-export { generate_boirlerplate };
+export { generate_boilerplate };

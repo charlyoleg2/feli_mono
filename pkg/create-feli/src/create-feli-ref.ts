@@ -2,7 +2,7 @@
 // create-feli-ref.ts
 
 import { setTimeout as sleep } from 'node:timers/promises';
-import { generate_boirlerplate } from './create-feli-api';
+import { generate_boilerplate } from './create-feli-api';
 //import type { tCfg1, tResp } from './create-feli-common';
 import type { tCfg1 } from './create-feli-common';
 //import { firstLetterCapital, prefixOutputPath } from './create-feli-common';
@@ -20,7 +20,7 @@ const pkgName = 'webAppAbc-uis';
 const cfg1: tCfg1 = {
 	pkgName: `${pkgName}`
 };
-await generate_boirlerplate(cfg1, preDir);
+await generate_boilerplate(cfg1, preDir);
 await sleep(100); // for fun
 
 // end of script
