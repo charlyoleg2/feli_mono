@@ -7,6 +7,9 @@
 		"type": "git",
 		"url": "git+https://github.com/charlyoleg2/feli_mono.git"
 	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com"
+	},
 	"homepage": "https://www.npmjs.com/package/create-feli",
 	"author": "charlyoleg",
 	"license": "ISC",
