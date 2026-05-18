@@ -1,5 +1,5 @@
 {
-	"name": "feli",
+	"name": "@charlyoleg2/feli",
 	"description": "library for making quickly your mini-server for your front-end only web-app",
 	"version": "1.0.9",
 	"private": false,

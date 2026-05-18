@@ -1,5 +1,5 @@
 {
-	"name": "create-feli",
+	"name": "@charlyoleg2/create-feli",
 	"version": "1.0.9",
 	"description": "The npm-initializer for creating a new feli package",
 	"private": false,
