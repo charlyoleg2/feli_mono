@@ -1,7 +1,7 @@
 {
 	"name": "feli-pages",
 	"description": "html-pages for documenting feli",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"private": true,
 	"repository": {
 		"type": "git",
