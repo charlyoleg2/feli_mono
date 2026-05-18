@@ -52,5 +52,4 @@ jobs:
               if: github.ref_type == 'tag'
               run: npm run gh-ghpub
               env:
-                  NODE_AUTH_TOKEN: ${{ secrets.PUBLISH_GH_PKG }}
-                  GITHUB_TOKEN: ${{ secrets.PUBLISH_GH_PKG }}
+                  NODE_AUTH_TOKEN: ${{ secret.GITHUB_TOKEN }}
