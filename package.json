@@ -1,6 +1,6 @@
 {
 	"name": "feli_mono",
-	"version": "1.0.16",
+	"version": "1.0.17",
 	"description": "The mono-repo for the library-package feli",
 	"private": true,
 	"repository": {
