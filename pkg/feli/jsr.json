@@ -1,6 +1,6 @@
 {
-	"name": "@parametrix/@charlyoleg2/feli",
-	"version": "1.0.11",
+	"name": "@parametrix/feli",
+	"version": "1.0.12",
 	"license": "ISC",
 	"exports": "./src/index.ts"
 }
