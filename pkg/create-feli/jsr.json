@@ -1,6 +1,6 @@
 {
 	"name": "@parametrix/create-feli",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"license": "ISC",
 	"exports": "./src/create-feli-cli.ts"
 }
