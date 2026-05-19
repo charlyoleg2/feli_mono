@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // check-feli.ts
 
-import { feli_cli } from '@charlyoleg2/feli';
+import { feli_cli } from 'feli';
 import process from 'node:process';
 import path from 'node:path';
 

@@ -9,7 +9,6 @@ jobs:
         permissions:
             contents: write
             id-token: write
-            packages: write
         steps:
             - name: Checkout
               uses: actions/checkout@v4
@@ -28,6 +27,7 @@ jobs:
             - uses: actions/setup-node@v6
               with:
                   node-version: '24'
+                  registry-url: 'https://registry.npmjs.org'
 
             - name: clean and install
               run: npm ci
@@ -49,6 +49,4 @@ jobs:
 
             - name: Publish
               if: github.ref_type == 'tag'
-              run: npm run gh-ghpub
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npm run gh-npmpub
