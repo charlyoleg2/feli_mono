@@ -28,8 +28,6 @@ jobs:
             - uses: actions/setup-node@v6
               with:
                   node-version: '24'
-                  registry-url: 'https://registry.npmjs.org/'
-                  scope: '@charlyoleg2'
 
             - name: clean and install
               run: npm ci
