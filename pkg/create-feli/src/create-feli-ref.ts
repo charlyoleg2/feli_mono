@@ -2,10 +2,10 @@
 // create-feli-ref.ts
 
 import { setTimeout as sleep } from 'node:timers/promises';
-import { generate_boilerplate } from './create-feli-api';
-//import type { tCfg1, tResp } from './create-feli-common';
-import type { tCfg1 } from './create-feli-common';
-//import { firstLetterCapital, prefixOutputPath } from './create-feli-common';
+import { generate_boilerplate } from './create-feli-api.ts';
+//import type { tCfg1, tResp } from './create-feli-common.ts';
+import type { tCfg1 } from './create-feli-common.ts';
+//import { firstLetterCapital, prefixOutputPath } from './create-feli-common.ts';
 
 // get optional preDir from command-line
 const preDir = process.argv[2] || 'tmp2';

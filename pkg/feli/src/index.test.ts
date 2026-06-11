@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
 //import { describe, it } from 'vitest';
-import { feli_cli } from './index';
+import { feli_cli } from './index.ts';
 
 describe('feli suit', () => {
 	it('feli with wrong path', async ({ expect }) => {

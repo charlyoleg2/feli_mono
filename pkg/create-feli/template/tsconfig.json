@@ -1,15 +1,12 @@
 {
 	"compilerOptions": {
-		"target": "esnext",
-		"module": "esnext",
-		"outDir": "./build",
-		"esModuleInterop": true,
-		"resolveJsonModule": true,
-		"moduleResolution": "bundler",
-		"skipLibCheck": true,
+		"rewriteRelativeImportExtensions": true,
 		"declaration": true,
 		"sourceMap": true,
-		"strict": true
+		"strict": true,
+		"outDir": "./build",
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext"
 	},
 	"include": ["./src"]
 }

@@ -5,10 +5,10 @@ import * as prom from '@clack/prompts';
 import chalk from 'chalk';
 import packag from '../package.json' with { type: 'json' };
 import { setTimeout as sleep } from 'node:timers/promises';
-import { generate_boilerplate } from './create-feli-api';
-//import type { tCfg1, tResp } from './create-feli-common';
-import type { tCfg1 } from './create-feli-common';
-import { prefixOutputPath } from './create-feli-common';
+import { generate_boilerplate } from './create-feli-api.ts';
+//import type { tCfg1, tResp } from './create-feli-common.ts';
+import type { tCfg1 } from './create-feli-common.ts';
+import { prefixOutputPath } from './create-feli-common.ts';
 
 // first message
 const firstMsg =

@@ -5,9 +5,9 @@ import { readFile, writeFile, access, mkdir } from 'node:fs/promises';
 //import { Buffer } from 'node:buffer';
 import { dirname, extname } from 'path';
 import Handlebars from 'handlebars';
-import type { tCfg1, tCfg2, tResp } from './create-feli-common';
-import { firstLetterCapital, underline } from './create-feli-common';
-import { template_file_list } from './create-feli-list';
+import type { tCfg1, tCfg2, tResp } from './create-feli-common.ts';
+import { firstLetterCapital, underline } from './create-feli-common.ts';
+import { template_file_list } from './create-feli-list.ts';
 
 async function createMissingDir(outPath: string): Promise<void> {
 	// create missing output directory
