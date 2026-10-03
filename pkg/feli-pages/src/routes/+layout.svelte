@@ -12,7 +12,8 @@
 <header>
 	<a href={resolve('/')} style="text-decoration:none;color:navy;">
 		<h1>
-			<img src={asset('/feli_logo.svg')} alt="Feli's logo" width="42" height="42" />
+			<img src={asset('feli_logo.svg')} alt="Feli's logo" width="42" height="42" />
+
 			Feli pages
 		</h1>
 	</a>
