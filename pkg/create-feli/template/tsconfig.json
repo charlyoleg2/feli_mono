@@ -1,8 +1,10 @@
 {
 	"compilerOptions": {
 		"rewriteRelativeImportExtensions": true,
+		"skipLibCheck": true,
 		"declaration": true,
 		"sourceMap": true,
+		"types": ["node"],
 		"strict": true,
 		"outDir": "./build",
 		"module": "NodeNext",
