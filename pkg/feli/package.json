@@ -81,7 +81,7 @@
 		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^26.6.5",
 		"@types/yargs": "^17.0.35",
-		"eslint": "^10.12.0",
+		"eslint": "^10.13.0",
 		"eslint-config-prettier": "^10.1.8",
 		"jsr": "^0.14.3",
 		"npm-run-all2": "^9.0.3",
