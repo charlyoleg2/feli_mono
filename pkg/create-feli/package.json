@@ -39,6 +39,8 @@
 			"./src/create-feli-ref.ts"
 		],
 		"format": "esm",
+		"target": "esnext",
+		"fixedExtension": false,
 		"splitting": false,
 		"dts": false,
 		"sourcemap": false,

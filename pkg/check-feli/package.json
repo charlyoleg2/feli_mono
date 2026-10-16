@@ -35,6 +35,8 @@
 			"src/check-feli.ts"
 		],
 		"format": "esm",
+		"target": "esnext",
+		"fixedExtension": false,
 		"splitting": false,
 		"dts": true,
 		"sourcemap": true,
