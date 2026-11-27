@@ -9,11 +9,12 @@ const dev = process.argv.includes('dev') || basePath === undefined;
 
 export default defineConfig({
 	plugins: [
+		mdsvex({ extensions: ['.svx', '.md'] }),
 		sveltekit({
-			extensions: ['.svelte', '.svx', '.md'],
+			extensions: ['.svelte'],
 			// Consult https://svelte.dev/docs/kit/integrations
 			// for more information about preprocessors
-			preprocess: [vitePreprocess(), mdsvex({ extensions: ['.svx', '.md'] })],
+			preprocess: [vitePreprocess()],
 			adapter: adapter(),
 			paths: {
 				base: dev ? '' : `/${basePath}`,
