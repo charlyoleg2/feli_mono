@@ -69,7 +69,6 @@
 	},
 	"dependencies": {
 		"@hono/node-server": "^2.1.11",
-		"fs-extra": "^11.4.1",
 		"get-port": "^7.2.0",
 		"hono": "^4.13.23",
 		"open": "^11.0.4",
@@ -78,7 +77,6 @@
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
 		"@types/eslint__js": "^8.42.3",
-		"@types/fs-extra": "^11.0.4",
 		"@types/node": "^26.6.11",
 		"@types/yargs": "^17.0.35",
 		"eslint": "^10.16.0",
