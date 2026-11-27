@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link href="../_app/immutable/entry/start.dajJHnQp.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/payload.DSmR2FwN.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DUTjbZNf.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/BaKZf59K.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/C3EYMuvl.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/iXbvtJaa.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/DgOTkg6W.js" rel="modulepreload">
+		<link href="../_app/immutable/entry/app.CotTV05I.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/0.Cd-53bk4.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/CZAXxD8o.js" rel="modulepreload">
+		<link href="../_app/immutable/nodes/4.wfKd-21c.js" rel="modulepreload">
+		<link href="../_app/immutable/chunks/IKAr-861.js" rel="modulepreload">
+		
+		<link href="../_app/immutable/assets/0.i3v8BiTz.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!--[0--><!--[--><header><a href="../" style="text-decoration:none;color:navy;"><h1><img src="../feli_logo.svg" alt="Feli's logo" width="42" height="42"/> Feli pages</h1></a></header> <main class="svelte-12qhfyh"><!--[--><!--[-1--><!--[--><p>Feli_mono
+==========</p><p>Presentation</p><hr/><p>The purpose of the project <strong>Feli</strong> is to <strong>install locally</strong> a pure front-end web-app. <strong>Feli</strong> means *<strong>F</strong>*ront *<strong>E</strong>*nd *<strong>L</strong>*ocally *<strong>I</strong>*nstalled.</p><p>Links</p><hr/><p>The mono-repo <a href="https://github.com/charlyoleg2/feli_mono">feli_mono</a> publishes two packages:</p><ul><li><a href="https://www.npmjs.com/package/feli">feli</a></li> <li><a href="https://www.npmjs.com/package/create-feli">create-feli</a></li></ul><p>And it generates those <a href="https://charlyoleg2.github.io/feli_mono/">html-pages</a></p><p>Alternatives</p><hr/><p><a href="https://deno.com/deploy">deno deploy</a> may propose a way to install locally pure front-end web-app.</p><p>Requirements</p><hr/><ul><li><a href="https://nodejs.org">node</a> > 22.0.0</li> <li><a href="https://docs.npmjs.com/cli">npm</a> > 11.0.0</li></ul><p>Installation</p><hr/><pre class="twinkleplop language-bash" data-language="bash"><code><span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">i</span> <span class="tok operator">-</span><span class="tok identifier">D</span> <span class="tok identifier">feli</span></span></code></pre><p>Usage</p><hr/><p>Here the typical code for creating a mini-server:</p><pre class="twinkleplop language-javascript" data-language="javascript"><code><span class="l"><span class="tok keyword">import</span> <span class="tok punctuation">{</span> <span class="tok identifier">feli_cli</span> <span class="tok punctuation">}</span> <span class="tok keyword">from</span> <span class="tok string">'../dist/index.js'</span><span class="tok punctuation">;</span></span>
+<span class="l"><span class="tok keyword">import</span> <span class="tok identifier">process</span> <span class="tok keyword">from</span> <span class="tok string">'node:process'</span><span class="tok punctuation">;</span></span>
+<span class="l"><span class="tok keyword">import</span> <span class="tok identifier">path</span> <span class="tok keyword">from</span> <span class="tok string">'node:path'</span><span class="tok punctuation">;</span></span>
+<span class="l"></span>
+<span class="l"><span class="tok keyword">const</span> <span class="tok constant">scrDir</span> <span class="tok operator">=</span> <span class="tok keyword">import</span><span class="tok punctuation">.</span><span class="tok identifier">meta</span><span class="tok punctuation">.</span><span class="tok identifier">dirname</span><span class="tok punctuation">;</span></span>
+<span class="l"><span class="tok keyword">const</span> <span class="tok constant">defaultPublicDir</span> <span class="tok operator">=</span> <span class="tok identifier">path</span><span class="tok punctuation">.</span><span class="tok function">join</span><span class="tok punctuation">(</span><span class="tok identifier">scrDir</span><span class="tok punctuation">,</span> <span class="tok string">'public'</span><span class="tok punctuation">);</span></span>
+<span class="l"></span>
+<span class="l"><span class="tok keyword">try</span> <span class="tok punctuation">{</span></span>
+<span class="l">	<span class="tok keyword">await</span> <span class="tok function">feli_cli</span><span class="tok punctuation">(</span><span class="tok identifier">defaultPublicDir</span><span class="tok punctuation">,</span> <span class="tok identifier">process</span><span class="tok punctuation">.</span><span class="tok identifier">argv</span><span class="tok punctuation">);</span></span>
+<span class="l"><span class="tok punctuation">}</span> <span class="tok keyword">catch</span> <span class="tok punctuation">(</span><span class="tok identifier">err</span><span class="tok punctuation">)</span> <span class="tok punctuation">{</span></span>
+<span class="l">	<span class="tok identifier">console</span><span class="tok punctuation">.</span><span class="tok function">error</span><span class="tok punctuation">(</span><span class="tok template">`CATCH ERROR: </span><span class="tok punctuation">${</span><span class="tok identifier">err</span><span class="tok punctuation">}</span><span class="tok template">`</span><span class="tok punctuation">);</span></span>
+<span class="l"><span class="tok punctuation">}</span></span></code></pre><p>Dev</p><hr/><p>In a terminal, run:</p><pre class="twinkleplop language-shell" data-language="shell"><code><span class="l"><span class="tok identifier">git</span> <span class="tok identifier">clone</span> <span class="tok identifier">https</span><span class="tok builtin">:</span><span class="tok operator">//</span><span class="tok identifier">github</span><span class="tok punctuation">.</span><span class="tok identifier">com</span><span class="tok operator">/</span><span class="tok identifier">charlyoleg2</span><span class="tok operator">/</span><span class="tok identifier">feli_mono</span><span class="tok punctuation">.</span><span class="tok identifier">git</span></span>
+<span class="l"><span class="tok builtin">cd</span> <span class="tok identifier">feli_mono</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">install</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">run</span> <span class="tok identifier">ci</span></span>
+<span class="l"><span class="tok identifier">node</span> <span class="tok identifier">pkg</span><span class="tok operator">/</span><span class="tok identifier">check</span><span class="tok operator">-</span><span class="tok identifier">feli</span><span class="tok operator">/</span><span class="tok identifier">dist</span><span class="tok operator">/</span><span class="tok identifier">check</span><span class="tok operator">-</span><span class="tok identifier">feli</span><span class="tok punctuation">.</span><span class="tok identifier">js</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">run</span> <span class="tok identifier">check</span><span class="tok operator">-</span><span class="tok identifier">feli</span>:<span class="tok identifier">run</span></span></code></pre><p>Upgrade dependencies</p><hr/><pre class="twinkleplop language-bash" data-language="bash"><code><span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">outdated</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">update</span> <span class="tok operator">--</span><span class="tok identifier">save</span></span>
+<span class="l"><span class="tok identifier">git</span> <span class="tok identifier">commit</span> <span class="tok operator">-</span><span class="tok identifier">am</span> <span class="tok string">'npm update --save'</span></span></code></pre><p>or</p><pre class="twinkleplop language-bash" data-language="bash"><code><span class="l"><span class="tok identifier">npx</span> <span class="tok identifier">npm</span><span class="tok operator">-</span><span class="tok identifier">check</span><span class="tok operator">-</span><span class="tok identifier">updates</span></span>
+<span class="l"><span class="tok identifier">npx</span> <span class="tok identifier">npm</span><span class="tok operator">-</span><span class="tok identifier">check</span><span class="tok operator">-</span><span class="tok identifier">updates</span> <span class="tok operator">--</span><span class="tok identifier">upgrade</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">install</span></span>
+<span class="l"><span class="tok identifier">git</span> <span class="tok identifier">commit</span> <span class="tok operator">-</span><span class="tok identifier">am</span> <span class="tok string">'npx npm-check-updates --upgrade'</span></span></code></pre><p>Publish a new release</p><hr/><pre class="twinkleplop language-bash" data-language="bash"><code><span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">run</span> <span class="tok identifier">versions</span></span>
+<span class="l"><span class="tok identifier">git</span> <span class="tok identifier">commit</span> <span class="tok operator">-</span><span class="tok identifier">am</span> <span class="tok string">'increment sub-package versions'</span></span>
+<span class="l"><span class="tok identifier">npm</span> <span class="tok identifier">version</span> <span class="tok identifier">patch</span></span>
+<span class="l"><span class="tok identifier">git</span> <span class="tok identifier">push</span></span>
+<span class="l"><span class="tok identifier">git</span> <span class="tok identifier">push</span> <span class="tok identifier">origin</span> <span class="tok identifier">v0</span><span class="tok punctuation">.</span><span class="tok identifier">5</span><span class="tok punctuation">.</span><span class="tok identifier">3</span></span></code></pre><!--]--><!--]--><!--]--><!----></main> <footer><h3>Links around Feli</h3> <ol><li><a href="https://www.npmjs.com/package/feli">npm package</a></li> <li><a href="https://www.npmjs.com/package/create-feli">npm package create</a></li> <li><a href="https://github.com/charlyoleg2/feli_mono">Github</a></li> <li><a href="https://charlyoleg2.github.io/feli_mono">Github pages</a></li></ol></footer><!--]--><!--]--><!--]--><!----> <!--[-1--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_137kzh6 = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						version: "1795818517878",
+						assets: "/feli_mono"
+					};
+
+					const element = document.currentScript.parentElement;
+
+					import("../_app/immutable/entry/start.dajJHnQp.js").then(async (kit) => {
+						kit.init(__sveltekit_137kzh6);
+						const app = await import("../_app/immutable/entry/app.CotTV05I.js");
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,null],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
